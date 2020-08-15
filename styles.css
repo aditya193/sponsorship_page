@@ -446,6 +446,7 @@
     font-family: Dubai-Light;
     background: rgba(30, 30, 30);
 } */
+
 .sec4 {
     background: #323232;
 }
@@ -1049,7 +1050,7 @@
 
 /* features */
 #features {
-    padding: 7% 15%;
+    padding: 3% 15%;
     background-color: #eaffd0;
     position: relative;
 }
@@ -1084,7 +1085,7 @@
 /* section6 */
 /* footer section */
 #footer {
-    padding: 5% 15%;
+    padding: 3% 15%;
     text-align: center;
     background-color: #eaeaea;
 }
@@ -1093,8 +1094,9 @@
     margin: 20px 10px;
 }
 
-body {
-    overflow-x: hidden !important;
+body,
+html {
+    overflow-x: hidden;
 }
 
 .container {
