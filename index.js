@@ -1,5 +1,7 @@
 // section3
 $(document).ready(function () {
+
+
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
@@ -102,6 +104,13 @@ $(document).ready(function () {
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
     }
+
+    // counter
+    $('.counter-item').countUp({
+
+        'time': 2000,
+        'delay': 10
+    });
 
 });
 // section3
