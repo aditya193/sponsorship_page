@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -27,6 +26,25 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+    <script>
+        function getParameterByName(e) {
+            e = e.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var t = new RegExp("[\\?&]" + e + "=([^&#]*)").exec(location.search);
+            return null === t ? "" : decodeURIComponent(t[1].replace(/\+/g, " "))
+        }
+
+        function SetUTMCode() {
+            var source = getParameterByName("utm_source"),
+                medium = getParameterByName("utm_medium"),
+                campaign = getParameterByName("utm_campaign");
+            document.getElementById("Source").value = source;
+            document.getElementById("Medium").value = medium;
+            document.getElementById("Campaign").value = campaign;
+            return validateData();
+        }
+    </script>
 
 </head>
 
@@ -216,12 +234,8 @@
 
 
     <!-- section2 -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
 
-    <div class="how-section1 ">
+    <!-- <div class="how-section1 ">
         <div class="row">
             <div class="col-12 sec2">
                 <h1>आपको हमें क्यों प्रायोजित करना चाहिए</h1>
@@ -285,8 +299,141 @@
                     class="rounded-circle img-fluid" alt="" />
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- section2 -->
+
+
+    <!--Benefits Section Start-->
+    <section>
+        <div class="container-fluid dark-green text-center division-1">
+            <h2>आपको हमें प्रायोजित क्यों करना चाहिए</h2>
+        </div>
+        <div class="container">
+            <div class="division-2 main">
+                <div class="plane-container">
+                    <img src="images/airplane.png">
+                </div>
+                <div class="div-wrapper">
+                    <div class="dark-green text-center section-sub-head">
+                        <h4>हमें बढ़ावा देने के लाभ </h4>
+                    </div>
+                    <ul class="custom-disc-ul">
+                        <li>सोशल मीडिया का समर्थन</li>
+
+                        <li>बड़ी संख्या में पंजीकरण</li>
+
+                        <li>कूपन के साथ प्रचार</li>
+
+                        <li>बड़ी भागीदारी</li>
+
+                        <li>चर्चित प्रतियोगिताए </li>
+
+                    </ul>
+
+
+                    <div class="dark-green text-center section-sub-head">
+                        <h4>प्रचार करने के तरीके</h4>
+                    </div>
+
+                    <div class="row align-items-center benefits-item">
+                        <div class="col-3 text-center">
+                            <div><img src="https://www.photomirage.io/static/pm/images/home/social-icons.jpg"
+                                    class="benefits-item-icon">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <h4 class="benefits-item-head"><strong>सोशल मीडिया</strong></h4>
+                            <p class="limit-p-width">Develop ways to help solve a technical problems and improve upon
+                                its overall productivity and success.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center benefits-item">
+                        <div class="col-3 text-center">
+                            <div><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIN8JjACMviBtJbI1jyR9io8Tg7tpvvqmN_g&usqp=CAU"
+                                    class="benefits-item-icon">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <h4 class="benefits-item-head"><strong>वेबसाइट</strong></h4>
+                            <p class="limit-p-width">
+                                We provide you with well-researched Study material, prepared by our experts keeping in
+                                minds the needs of students and current trends in the industry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center benefits-item">
+                        <div class="col-3 text-center">
+                            <div><img
+                                    src="https://previews.123rf.com/images/mpetrovskaya/mpetrovskaya1907/mpetrovskaya190700029/127433251-group-of-cartoon-characters-healthy-lifestyle-concept-outdoor-sport-competition-athlete-sprinter-spo.jpg"
+                                    class="benefits-item-icon">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <h4 class="benefits-item-head"><strong>प्रतियोगिताएं</strong></h4>
+                            <p class="limit-p-width">
+                                Get a hands-on training experience from the best professionals in the field with a
+                                certification to decorate your resume.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center benefits-item">
+                        <div class="col-3 text-center">
+                            <div><img
+                                    src="data:image/jpeg;base64,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"
+                                    class="benefits-item-icon">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <h4 class="benefits-item-head"><strong>वीडियो</strong></h4>
+                            <p class="limit-p-width">
+                                Technology has become a vital part of education in recent years, therefore, our
+                                workshops use modern teaching methodology to train the students.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Benefits Section End-->
+
+
+
+
+    <!--Counter Section Start-->
+    <section>
+        <div class="container-fluid dark-green text-center division-1">
+            <h2>हमे क्या गौरवान्वित करता है </h2>
+            <div class="row no-gutters counter-content">
+                <div class="col-sm-3">
+                    <p><span class="counter-item">20,000</span>+</p>
+                    <i class="si fab fa-facebook-f fa-4x"></i>
+                    <p>फेसबुक अनुयायी</p>
+                </div>
+                <div class="col-sm-3">
+                    <p><span class="counter-item">1200</span></p>
+                    <i class="si fab fa-instagram  fa-4x"></i>
+                    <p>इंस्टाग्राम फॉलोअर्स</p>
+                </div>
+                <div class="col-sm-3">
+                    <p><span class="counter-item">2,000</span>+</p>
+                    <i class="si fab fa-youtube  fa-4x"></i>
+                    <p>यूट्यूब सब्सक्राइबर</p>
+                </div>
+                <div class="col-sm-3">
+                    <p><span class="counter-item">1,000</span></p>
+                    <i class="si fab fa-twitter fa-4x"></i>
+                    <p>ट्विटर फॉलोअर्स</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Counter Section End-->
 
 
 
@@ -520,18 +667,16 @@ I built this slider when I first started to learn JS, you can rebuild it with mo
     <!-- footer -->
     <!-- section6 -->
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.cards-gallery', {
-            animation: 'slideIn'
-        });
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.countup.js"></script>
+    <script src="index.js"></script>
 
 
 </body>
